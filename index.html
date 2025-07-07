@@ -7,13 +7,43 @@
     body {
       background-color: #ccffcc; /* Hellgrün */
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      color: #333;
+      margin: 0;
+      padding: 0;
     }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #a3e6a3;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+
     h1 {
       font-size: 3em;
     }
+
     p {
       font-size: 1.2em;
       max-width: 600px;
@@ -22,7 +52,21 @@
   </style>
 </head>
 <body>
-  <h1>Willkommen auf meiner Website</h1>
-  <p>Dies ist meine erste eigene Künstlerseite. Ich arbeite an einer Serie mit dem Titel <strong></strong>, die sichtbar macht.</p>
+
+  <header>
+    <div><strong>Jonas Jallow</strong></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="kunst.html">Kunst</a>
+      <a href="uebermich.html">Über mich</a>
+    </div>
+  </header>
+
+  <div class="content">
+    <h1>Willkommen auf meiner Website</h1>
+    <p>Dies ist meine erste eigene Künstlerseite. Ich arbeite an einer Serie mit dem Titel <strong></strong>, sichtbar macht.</p>
+  </div>
+
 </body>
 </html>
